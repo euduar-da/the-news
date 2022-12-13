@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald&display=swap');
+body{
+   height: 100%;
+   font-family: 'Oswald';
+   text-align: center;
+   background-color: #514869;
+   
+}
+
+body > h1{
+  
+    height: 50%;
+    margin: 50px;
+    border: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    background-color: #201b2c;
+ }
+
+ .top-page{
+   border-top: 20px;
+   box-shadow: 0px 2px 4px #00000056;
+ }
+ .top-page-image{
+   width: 20vh;
+ }
+ .btn btn-success btn-lg float-right{
+ padding-right: 15px;
+ padding-left: 15px;
+ text-align:right;
+ cursor: pointer;
+ background-color: #201b2c;
+ }
+ 
+ .rightcard-page{
+  border-right: 2px solid gainsboro;
+  width: 225px;
+  height: 222vh;
+  position:absolute;
+  right: 80%;
+  /*
+   width: 250px;
+   height: 220vh;
+   background-color: gainsboro;
+   border-radius: 20px;
+   margin: 0px 2px 2px 0px;
+   box-shadow: 0px 2px 4px #00000056;
+   float: left;
+   --border-right: 2px solid gainsboro;
+  width: 250px;
+  height: 220vh;
+  position:absolute;
+  right: 80%;
+ 
+   /*display:flex;
+   justify-content: right;
+   align-items: right;
+   flex-direction: column;
+   padding: 80px 85px;
+   background: #d3d3d3;
+   border-radius: 20px;
+   box-shadow: 0px 10px 40px #00000056;*/
+ }
+
+.leftcard-page{
+  border-left: 2px solid gainsboro;
+  width: 220px;
+  height: 222vh;
+  position:absolute;
+  left: 80%;
+  /*
+   width: 250px;
+   height: 220vh;
+   background-color: gainsboro;
+   border-radius: 20px;
+   margin: 0px 2px 2px 0px;
+   box-shadow: 0px 2px 4px #00000056;
+   float: right;
+   -- border-left: 2px solid gainsboro;
+  width: 250px;
+  height: 220vh;
+  position:absolute;
+  left: 80%;*/
+
+  }
+
+   .cardmain-page{
+    width: 900px;
+    height: 220vh;
+    /*border-radius: 20px;
+    margin: 0px 2px 2px 0px;
+    box-shadow: 0px 2px 4px #00000056;
+    float: right;
+    -- width: 900px;
+    height: 220vh;*/
+    }
+
+  .down-page{
+    
+    height: 40vh;
+    background-color: #2f2841;
+    clear: both;
+  }
+
+  .container{
+    height: 10vh;
+    display: flex;
+   
+
+  }
+  
+  #checkbox-menu{
+    position:absolute;
+    opacity: 0;
+  }
+  
+  label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 15px;
+    width: 30px;
+  }
+  
+  label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: black;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1){
+    top: 0;
+  }
+  
+  label span:nth-child(2){
+    top: 8px;
+  }
+  
+  label span:nth-child(3){
+    top: 16px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
+
+
+   
+  .button-as-link{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+  }
